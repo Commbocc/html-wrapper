@@ -1,0 +1,16 @@
+@import '~bootstrap/scss/functions';
+@import 'variables';
+// @import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/bootstrap';
+@import '~font-awesome/css/font-awesome.min.css';
+
+// components
+@import 'navigation';
+
+// global
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
