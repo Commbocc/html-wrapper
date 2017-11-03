@@ -46,9 +46,9 @@ Use the HTML below as a base layout.
 
   </main>
 
-  <script type="https://commbocc.github.io/html-wrapper/static/js/manifest.js"></script>
-  <script type="https://commbocc.github.io/html-wrapper/static/js/vendor.js"></script>
-  <script type="https://commbocc.github.io/html-wrapper/static/js/app.js"></script>
+  <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/manifest.js"></script>
+  <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/vendor.js"></script>
+  <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/app.js"></script>
 </body>
 </html>
 ```
