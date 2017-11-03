@@ -63,7 +63,7 @@ export default {
   },
   data () {
     return {
-      logoUrl: 'http://www.hillsboroughcounty.org/library/hillsborough/system/logos/hc-logo-horizontal-rgb.png'
+      logoUrl: 'https://github.com/Commbocc/html-wrapper/raw/master/src/assets/hc-logo-horizontal-RGB.png'
     }
   },
   methods: {

@@ -51,7 +51,7 @@ export default {
   mixins: [FooterLinks, SocialLinks],
   data () {
     return {
-      logoUrl: 'http://www.hillsboroughcounty.org/library/hillsborough/system/logos/hc-logo-horizontal-rgb_drkbgrd.png'
+      logoUrl: 'https://raw.githubusercontent.com/Commbocc/html-wrapper/master/src/assets/hc-logo-horizontal-RGB_drkbgrd.png'
     }
   }
 }
