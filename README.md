@@ -56,11 +56,11 @@ Use the HTML below as a base layout.
 ### Customizations
 
 * `<title>` - the project title.
-* `class="mb-3"` - the bootstrap class of the `<header>` element where `mb-3` is a [Bootstrap 4 utility spacing](http://getbootstrap.com/docs/4.0/utilities/spacing/#notation) class that sets the bottom margin.
-* `logo-href="/"` - the URL (absolute or relative) that the logo in the top navigation links to.
+* `class="mb-3"` - the class of the `<header>` element. `mb-3` is a [Bootstrap 4 utility spacing](http://getbootstrap.com/docs/4.0/utilities/spacing/#notation) class that sets the bottom margin of the element.
+* `logo-href="/"` - the URL (absolute or relative) that the logo in the top navigation links to. If unset this defaults to `http://hcflgov.net`.
 * `<section class="container">` - [Bootstrap Containers](https://getbootstrap.com/docs/4.0/layout/overview/#containers).
-* `<!-- PLACE CONTENT HERE -->` - the default page content.
-* `class="mt-3"` - the bootstrap class of the `<footer>` element where `mt-3` is a [Bootstrap 4 utility spacing](http://getbootstrap.com/docs/4.0/utilities/spacing/#notation) class that sets the top margin.
+* `<!-- PLACE CONTENT HERE -->` - the page content.
+* `class="mt-3"` - the class of the `<footer>` element. `mt-3` is a [Bootstrap 4 utility spacing](http://getbootstrap.com/docs/4.0/utilities/spacing/#notation) class that sets the top margin of the element.
 
 ## Build Setup
 
