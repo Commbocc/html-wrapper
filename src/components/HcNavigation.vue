@@ -21,7 +21,9 @@
             <div class="dropdown-menu">
               <h4 class="d-none d-lg-block text-info">{{ link.text }}</h4>
               <div class="dropdown-menu-2-col">
-                <a v-for="child in link.children" class="dropdown-item" :href="child.href">{{ child.text }}</a>
+                <a v-for="child in link.children" class="dropdown-item" :href="`http://hcflgov.net/${child.ItemUrl}`">
+                  {{ child.DisplayName }}
+                </a>
               </div>
             </div>
           </li>
@@ -55,7 +57,7 @@
 
 <script>
 import Vue from 'vue'
-import NavLinks from '@/mixins/NavLinks'
+import NavLinks from '@/mixins/NavLinksResource'
 import ShowSearchWhenMobile from '@/mixins/ShowSearchWhenMobile'
 
 export default {
