@@ -6,7 +6,7 @@
         <img :src="logoUrl" alt="Hillsborough County Logo" class="logo">
       </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button ref="navToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -26,12 +26,16 @@
             </div>
           </li>
 
+          <li class="nav-item d-lg-none">
+            <hr class="my-1">
+          </li>
+
           <li class="nav-item dropdown">
-            <a @click="focusSearch()" href="#" class="nav-link dropdown-toggle" title="Search" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a @click="focusSearch()" href="#" class="nav-link dropdown-toggle d-none d-lg-inline-block" title="Search" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa fa-fw fa-search"></i>
             </a>
-            <div class="dropdown-menu">
-              <form action="http://www.hillsboroughcounty.org/en/search" method="get" class="ml-auto my-2 my-lg-0">
+            <div ref="searchDropdown" class="dropdown-menu">
+              <form action="http://www.hillsboroughcounty.org/en/search" method="get">
                 <div class="input-group input-group-lg">
                   <input class="form-control" name="q" type="search" placeholder="Search For..." aria-label="Search" ref="searchInput" required>
                   <span class="input-group-btn">
@@ -52,9 +56,10 @@
 <script>
 import Vue from 'vue'
 import NavLinks from '@/mixins/NavLinks'
+import ShowSearchWhenMobile from '@/mixins/ShowSearchWhenMobile'
 
 export default {
-  mixins: [NavLinks],
+  mixins: [NavLinks, ShowSearchWhenMobile],
   props: {
     logoHref: {
       type: String,
