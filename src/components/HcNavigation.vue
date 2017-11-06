@@ -1,5 +1,5 @@
 <template>
-  <nav id="hc-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="hc-nav" class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
 
       <a class="navbar-brand" :href="logoHref">
