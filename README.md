@@ -55,12 +55,27 @@ Use the HTML below as a base layout.
 
 ### Customizations
 
+#### HTML
+
 * `<title>` - the project title.
 * `class="mb-3"` - the class of the `<header>` element. `mb-3` is a [Bootstrap 4 utility spacing](http://getbootstrap.com/docs/4.0/utilities/spacing/#notation) class that sets the bottom margin of the element.
-* `logo-href="/"` - the URL (absolute or relative) that the logo in the top navigation links to. If unset this defaults to `http://hcflgov.net`.
-* `<section class="container">` - [Bootstrap Containers](https://getbootstrap.com/docs/4.0/layout/overview/#containers).
-* `<!-- PLACE CONTENT HERE -->` - the page content.
 * `class="mt-3"` - the class of the `<footer>` element. `mt-3` is a [Bootstrap 4 utility spacing](http://getbootstrap.com/docs/4.0/utilities/spacing/#notation) class that sets the top margin of the element.
+* `<section class="container">` - See [Bootstrap Containers](https://getbootstrap.com/docs/4.0/layout/overview/#containers).
+
+#### Navigation Component
+
+> the props below show the default values
+
+* `logo-href="http://hcflgov.net"` - the URL (absolute or relative) that the logo links to.
+* `logo-target="_self"` - the [HTML target attribute](https://www.w3schools.com/tags/att_a_target.asp) of the logo.
+* `link-targets="_self"` - the [HTML target attribute](https://www.w3schools.com/tags/att_a_target.asp) of the dropdown links.
+* `form-target="_self"` - the [HTML target attribute](https://www.w3schools.com/tags/att_a_target.asp) of the search form.
+
+#### Footer Component
+
+> the props below show the default values
+
+* `link-targets="_self"` - the [HTML target attribute](https://www.w3schools.com/tags/att_a_target.asp) of the footer links.
 
 ## Build Setup
 

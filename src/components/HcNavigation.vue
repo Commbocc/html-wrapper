@@ -2,7 +2,7 @@
   <nav id="hc-nav" class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
 
-      <a class="navbar-brand" :href="logoHref">
+      <a class="navbar-brand" :href="logoHref" :target="logoTarget">
         <img :src="logoUrl" alt="Hillsborough County Logo" class="logo">
       </a>
 
@@ -21,7 +21,7 @@
             <div class="dropdown-menu">
               <h4 class="d-none d-lg-block text-info">{{ link.text }}</h4>
               <div class="dropdown-menu-2-col">
-                <a v-for="child in link.children" class="dropdown-item" :href="`http://hcflgov.net/${child.ItemUrl}`">
+                <a v-for="child in link.children" class="dropdown-item" :href="`http://hcflgov.net/${child.ItemUrl}`" :target="linkTargets">
                   {{ child.DisplayName }}
                 </a>
               </div>
@@ -37,7 +37,7 @@
               <i class="fa fa-fw fa-search"></i>
             </a>
             <div ref="searchDropdown" class="dropdown-menu">
-              <form action="http://www.hillsboroughcounty.org/en/search" method="get">
+              <form action="http://www.hillsboroughcounty.org/en/search" method="get" :target="formTarget">
                 <div class="input-group input-group-lg">
                   <input class="form-control" name="q" type="search" placeholder="Search For..." aria-label="Search" ref="searchInput" required>
                   <span class="input-group-btn">
@@ -59,13 +59,22 @@
 import Vue from 'vue'
 import NavLinks from '@/mixins/NavLinksResource'
 import ShowSearchWhenMobile from '@/mixins/ShowSearchWhenMobile'
+import LinkTargets from '@/mixins/LinkTargets'
 
 export default {
-  mixins: [NavLinks, ShowSearchWhenMobile],
+  mixins: [NavLinks, ShowSearchWhenMobile, LinkTargets],
   props: {
     logoHref: {
       type: String,
       default: 'http://hcflgov.net'
+    },
+    logoTarget: {
+      type: String,
+      default: '_self'
+    },
+    formTarget: {
+      type: String,
+      default: '_self'
     }
   },
   data () {

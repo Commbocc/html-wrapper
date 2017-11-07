@@ -7,7 +7,7 @@
         <div class="col-md-4 mb-4 order-md-4">
           <ul class="list-inline mb-0">
             <li v-for="link in footerLinks" class="list-inline-item mx-3">
-              <a :href="link.href" class="text-white">
+              <a :href="link.href" class="text-white" :target="linkTargets">
                 {{ link.text }}
               </a>
             </li>
@@ -15,7 +15,7 @@
         </div>
 
         <div class="col-md-4 mb-4 order-md-1">
-          <a href="http://hcflgov.net">
+          <a href="http://hcflgov.net" :target="linkTargets">
             <img :src="logoUrl" alt="Hillsborough County Logo" class="logo img-fluid">
           </a>
         </div>
@@ -46,9 +46,10 @@
 <script>
 import FooterLinks from '@/mixins/FooterLinks'
 import SocialLinks from '@/mixins/SocialLinks'
+import LinkTargets from '@/mixins/LinkTargets'
 
 export default {
-  mixins: [FooterLinks, SocialLinks],
+  mixins: [FooterLinks, SocialLinks, LinkTargets],
   data () {
     return {
       logoUrl: 'https://raw.githubusercontent.com/Commbocc/html-wrapper/master/src/assets/hc-logo-horizontal-RGB_drkbgrd.png'
