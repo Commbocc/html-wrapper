@@ -6,6 +6,7 @@
 @import '~font-awesome/css/font-awesome.min.css';
 
 // components
+@import 'navbar';
 @import 'navigation';
 
 // global
@@ -13,4 +14,9 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.sticky {
+	position: sticky;
+	top: $spacer;
 }
