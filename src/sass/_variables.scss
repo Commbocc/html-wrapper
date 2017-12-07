@@ -113,6 +113,10 @@ $theme-colors: (
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8% !default;
 
+// accessible colors
+$accessible-color-info-bg: #4e4e4e;
+// $accessible-color-info-bg: theme-color("secondary");
+
 
 // Options
 //
