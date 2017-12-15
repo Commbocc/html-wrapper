@@ -52,7 +52,7 @@ export default {
   computed: mapState({
     footerLinks: state => state.footer.links,
     socialLinks: state => state.social.links,
-    logoUrl: state => state.navigation.logoUrl
+    logoUrl: state => state.footer.logoUrl
   })
 }
 </script>
