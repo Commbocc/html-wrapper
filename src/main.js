@@ -16,7 +16,7 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#hc-main',
+  el: '#body-content',
   store,
   components: {
     HcNavigation,

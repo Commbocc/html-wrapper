@@ -1,23 +1,26 @@
 @import '~bootstrap/scss/functions';
 @import 'variables';
-// @import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/bootstrap';
-@import '~font-awesome/css/font-awesome.min.css';
 
-// components
-@import 'navbar';
-@import 'navigation';
-@import 'tables';
+@import '~bootstrap/scss/buttons';
+// @import '~bootstrap/scss/modal';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/utilities';
 
-// global
-body {
-	font-family: Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+@include form-validation-state("valid", $form-feedback-valid-color);
+@include form-validation-state("invalid", $form-feedback-invalid-color);
+
+#body-content .hc-content-with-left-nav {
+  @import '~bootstrap/scss/bootstrap-grid';
+
+  // global
+  // font-family: Helvetica, Arial, sans-serif !important;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 
 .sticky {
-	position: sticky;
-	top: $spacer;
+  position: sticky;
+  top: $spacer;
 }
