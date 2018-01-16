@@ -1,3 +1,4 @@
+@import 'fonts';
 @import '~bootstrap/scss/functions';
 @import 'variables';
 // @import '~bootstrap/scss/variables';
@@ -11,9 +12,6 @@
 @import 'tables';
 
 // global
-body {
-  font-family: 'Lato', sans-serif;
-}
 
 .sticky {
 	position: sticky;

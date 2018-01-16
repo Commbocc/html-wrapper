@@ -16,7 +16,6 @@ Use the HTML below as a base layout.
     <!-- PROJECT TITLE -->
   </title>
 
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://commbocc.github.io/html-wrapper/static/css/app.css">
 </head>
 <body>
