@@ -1,3 +1,4 @@
+@import 'fonts';
 @import '~bootstrap/scss/functions';
 @import 'variables';
 // @import '~bootstrap/scss/variables';
@@ -9,13 +10,9 @@
 @import 'breadcrumbs';
 @import 'navbar';
 @import 'navigation';
+@import 'tables';
 
 // global
-body {
-	font-family: Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
 
 .sticky {
 	position: sticky;

@@ -56,13 +56,13 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import NavLinks from '@/mixins/NavLinksResource'
-import ShowSearchWhenMobile from '@/mixins/ShowSearchWhenMobile'
+import { mapState } from 'vuex'
+import NavLinks from '@/mixins/NavLinks'
+import NavbarSearch from '@/mixins/NavbarSearch'
 import LinkTargets from '@/mixins/LinkTargets'
 
 export default {
-  mixins: [NavLinks, ShowSearchWhenMobile, LinkTargets],
+  mixins: [NavLinks, NavbarSearch, LinkTargets],
   props: {
     logoHref: {
       type: String,
@@ -77,17 +77,8 @@ export default {
       default: '_self'
     }
   },
-  data () {
-    return {
-      logoUrl: 'https://github.com/Commbocc/html-wrapper/raw/master/src/assets/hc-logo-horizontal-RGB.png'
-    }
-  },
-  methods: {
-    focusSearch () {
-      Vue.nextTick(() => {
-        this.$refs.searchInput.focus()
-      })
-    }
-  }
+  computed: mapState({
+    logoUrl: state => state.navigation.logoUrl
+  })
 }
 </script>

@@ -1,6 +1,6 @@
 {
   "name": "hc-satellite-wrapper",
-  "version": "1.1.3",
+  "version": "1.1.7",
   "description": "A Vue.js project",
   "author": "Kevin McCarthy <mccarthyk@hcflgov.net>",
   "private": true,
@@ -18,7 +18,8 @@
     "popper.js": "^1.12.6",
     "vue": "^2.5.2",
     "vue-resource": "^1.3.4",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

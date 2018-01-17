@@ -44,17 +44,16 @@
 </template>
 
 <script>
-import FooterLinks from '@/mixins/FooterLinks'
-import SocialLinks from '@/mixins/SocialLinks'
+import { mapState } from 'vuex'
 import LinkTargets from '@/mixins/LinkTargets'
 
 export default {
-  mixins: [FooterLinks, SocialLinks, LinkTargets],
-  data () {
-    return {
-      logoUrl: 'https://raw.githubusercontent.com/Commbocc/html-wrapper/master/src/assets/hc-logo-horizontal-RGB_drkbgrd.png'
-    }
-  }
+  mixins: [LinkTargets],
+  computed: mapState({
+    footerLinks: state => state.footer.links,
+    socialLinks: state => state.social.links,
+    logoUrl: state => state.footer.logoUrl
+  })
 }
 </script>
 
