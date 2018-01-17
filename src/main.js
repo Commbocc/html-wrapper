@@ -10,6 +10,7 @@ import 'bootstrap'
 import HcNavigation from './components/HcNavigation'
 import HcBanner from './components/HcBanner'
 import HcFooter from './components/HcFooter'
+import Preview from './components/Preview'
 
 Vue.use(VueResource)
 
@@ -22,6 +23,7 @@ new Vue({
   components: {
     HcNavigation,
     HcBanner,
-    HcFooter
+    HcFooter,
+    Preview
   }
 })
