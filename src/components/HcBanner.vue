@@ -2,9 +2,9 @@
 	<div class="jumbotron jumbotron-fluid bg-info text-white p-4">
 		<div class="container">
 
-			<h2 class="m-0">
+			<h1 class="font-weight-bold m-0">
 				{{ title }}
-			</h2>
+			</h1>
 
 			<nav aria-label="breadcrumbs">
 				<ol class="breadcrumb hc-banner-breadcrumb">
