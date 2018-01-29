@@ -30,19 +30,20 @@ Use the HTML below as a base layout.
 
   <main id="hc-main">
 
-    <header class="mb-3">
-      <nav id="hc-nav" is="hc-navigation" logo-href="/"></nav>
+    <header>
+      <nav is="hc-navigation" logo-href="/"></nav>
     </header>
 
-    <section class="container">
+    <section class="bg-white py-5">
+      <div class="container">
 
 
       <!-- PLACE CONTENT HERE -->
 
-
+      </div>
     </section>
 
-    <footer id="hc-footer" is="hc-footer" class="mt-3"></footer>
+    <footer is="hc-footer"></footer>
 
   </main>
 
