@@ -6,6 +6,8 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~font-awesome/css/font-awesome.min.css';
 
+@import 'mixins/gradients';
+
 // components
 @import 'banner';
 @import 'breadcrumbs';
@@ -20,4 +22,8 @@
 .sticky {
 	position: sticky;
 	top: $spacer;
+}
+
+#hc-footer {
+  @include gradient-bg(theme-color("secondary"), 2%);
 }
