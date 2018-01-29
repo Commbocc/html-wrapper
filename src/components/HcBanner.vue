@@ -28,7 +28,9 @@ export default {
     },
     crumbs: {
       type: Object,
-      default: {'Home': '/'}
+      default: function () {
+        return {'Home': '/'}
+      }
     }
   }
 }
