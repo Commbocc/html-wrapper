@@ -14,7 +14,19 @@
 
         <ul class="navbar-nav ml-auto">
 
-          <li v-for="link in navLinks" class="nav-item dropdown">
+          <li class="nav-item order-lg-12 dropdown">
+            <a @click="focusSearch()" href="#" class="nav-link dropdown-toggle d-none d-lg-inline-block" title="Search" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-search"></i>
+            </a>
+            <div ref="searchDropdown" class="dropdown-menu">
+
+              <!-- search -->
+              <NavSearchForm ref="searchForm" :form-target="formTarget" />
+
+            </div>
+          </li>
+
+          <li v-for="link in navLinks" class="nav-item order-lg-1 dropdown">
             <a href="#" class="nav-link dropdown-toggle" :class="link.linkClass" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ link.text }}
             </a>
@@ -28,25 +40,6 @@
             </div>
           </li>
 
-          <li class="nav-item d-lg-none">
-            <hr class="my-1">
-          </li>
-
-          <li class="nav-item dropdown">
-            <a @click="focusSearch()" href="#" class="nav-link dropdown-toggle d-none d-lg-inline-block" title="Search" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-fw fa-search"></i>
-            </a>
-            <div ref="searchDropdown" class="dropdown-menu">
-              <form action="http://www.hillsboroughcounty.org/en/search" method="get" :target="formTarget">
-                <div class="input-group input-group-lg">
-                  <input class="form-control" name="q" type="search" placeholder="Search For..." aria-label="Search" ref="searchInput" required>
-                  <span class="input-group-btn">
-                    <button class="btn btn-primary text-white" type="submit">Search</button>
-                  </span>
-                </div>
-              </form>
-            </div>
-          </li>
         </ul>
 
       </div>
@@ -56,13 +49,14 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import { mapState } from 'vuex'
+import NavSearchForm from '@/components/HcNavSearchForm'
 import NavLinks from '@/mixins/NavLinks'
-import NavbarSearch from '@/mixins/NavbarSearch'
 import LinkTargets from '@/mixins/LinkTargets'
 
 export default {
-  mixins: [NavLinks, NavbarSearch, LinkTargets],
+  mixins: [NavLinks, LinkTargets],
   props: {
     logoHref: {
       type: String,
@@ -77,8 +71,29 @@ export default {
       default: '_self'
     }
   },
+  components: {
+    NavSearchForm
+  },
   computed: mapState({
     logoUrl: state => state.navigation.logoUrl
-  })
+  }),
+  methods: {
+    focusSearch () {
+      Vue.nextTick(() => {
+        this.$refs.searchForm.$refs.searchInput.focus()
+      })
+    },
+    showSearchWhenMobile () {
+      if (this.$refs.navToggler.offsetLeft > 0) {
+        this.$refs.searchDropdown.classList.add('show')
+      } else {
+        this.$refs.searchDropdown.classList.remove('show')
+      }
+    }
+  },
+  mounted () {
+    window.onload = this.showSearchWhenMobile
+    window.onresize = this.showSearchWhenMobile
+  }
 }
 </script>
