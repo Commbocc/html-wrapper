@@ -1,5 +1,5 @@
 <template lang="html">
-  <form action="http://www.hillsboroughcounty.org/en/search" method="get" :target="formTarget">
+  <form :action="action" :method="method" :target="target">
 
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <ul class="list-inline small text-center d-none d-lg-block mt-3 mb-0">
+    <ul v-if="showFilters" class="list-inline small text-center d-none d-lg-block mt-3 mb-0">
       <li v-for="filter in filters" class="list-inline-item px-2">
         <input name="t" type="checkbox" :value="filter.key" :id="`searchFilter-${filter.key}`" :checked="filter.checked">
         <label class="" :for="`searchFilter-${filter.key}`">
@@ -34,49 +34,12 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
-  props: ['formTarget'],
-  data () {
-    return {
-      filters: [
-        {
-          key: 'article',
-          text: 'Web Pages',
-          icon: 'fa-file-o',
-          checked: true
-        },
-        {
-          key: 'story',
-          text: 'Newsroom Stories',
-          icon: 'fa-newspaper-o',
-          checked: true
-        },
-        {
-          key: 'documents',
-          text: 'Documents',
-          icon: 'fa-file-pdf-o',
-          checked: false
-        },
-        {
-          key: 'events',
-          text: 'Events',
-          icon: 'fa-calendar',
-          checked: false
-        },
-        {
-          key: 'locations',
-          text: 'Locations',
-          icon: 'fa-map-marker',
-          checked: false
-        },
-        {
-          key: 'departments',
-          text: 'Departments',
-          icon: 'fa-building-o',
-          checked: false
-        }
-      ]
-    }
-  }
+  props: ['action', 'method', 'target', 'showFilters'],
+  computed: mapState({
+    filters: state => state.search.filters
+  })
 }
 </script>

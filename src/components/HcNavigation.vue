@@ -21,7 +21,7 @@
             <div ref="searchDropdown" class="dropdown-menu">
 
               <!-- search -->
-              <NavSearchForm ref="searchForm" :form-target="formTarget" />
+              <NavSearchForm ref="searchForm" :action="formAction" :method="formMethod" :target="formTarget" show-filters="formShowFilters" />
 
             </div>
           </li>
@@ -66,9 +66,22 @@ export default {
       type: String,
       default: '_self'
     },
+    // search form props
+    formAction: {
+      type: String,
+      default: 'http://www.hillsboroughcounty.org/en/search'
+    },
+    formMethod: {
+      type: String,
+      default: 'get'
+    },
     formTarget: {
       type: String,
       default: '_self'
+    },
+    formShowFilters: {
+      type: Boolean,
+      default: true
     }
   },
   components: {
