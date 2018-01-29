@@ -1,0 +1,8 @@
+.hc-banner {
+  @include media-breakpoint-up(md) {
+    .hc-banner-title {
+      font-size: 3.5rem;
+      line-height: 1.1;
+    }
+  }
+}

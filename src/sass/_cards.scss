@@ -1,0 +1,9 @@
+.hc-news-event-card {
+  .hc-news-event-card-category {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(theme-color("info"), 0.9);
+    @extend .small, .py-1, .px-2, .text-white ;
+  }
+}
