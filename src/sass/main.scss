@@ -6,24 +6,34 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~font-awesome/css/font-awesome.min.css';
 
+// global
 @import 'mixins/gradients';
 
-// components
-@import 'banner';
-@import 'breadcrumbs';
-@import 'buttons';
-@import 'cards';
-@import 'navbar';
-@import 'navigation';
-@import 'tables';
-
-// global
+.font-serif {
+  font-family: 'Lora', serif;
+}
 
 .sticky {
 	position: sticky;
 	top: $spacer;
 }
 
+.sticky-top {
+	position: sticky;
+}
+
+// components
+@import 'banner';
+@import 'breadcrumbs';
+@import 'buttons';
+@import 'cards';
+@import 'jumbotron';
+@import 'navbar';
+@import 'navigation';
+@import 'rte';
+@import 'tables';
+
+//
 #hc-footer {
   @include gradient-bg(theme-color("secondary"), 2%);
 }

@@ -100,10 +100,10 @@ $colors: (
 ) !default;
 
 $theme-colors: (
-  primary: #ff6f59,
-  secondary: #044169,
+  primary: #ff6f5b,
+  secondary: #054173,
   success: #9bd63c,
-  info: #78ccd2,
+  info: #7ABFD7,
   warning: #f0ad4e,
   danger: #f1463c,
   light: $gray-100,
@@ -114,7 +114,7 @@ $theme-colors: (
 $theme-color-interval: 8% !default;
 
 // accessible colors
-$accessible-color-info-bg: #4e4e4e;
+$accessible-color-info-bg: #2A2A2A;
 // $accessible-color-info-bg: theme-color("secondary");
 
 
@@ -540,8 +540,8 @@ $nav-tabs-border-color:                       #ddd !default;
 $nav-tabs-border-width:                       $border-width !default;
 $nav-tabs-border-radius:                      $border-radius !default;
 $nav-tabs-link-hover-border-color:            $gray-200 !default;
-$nav-tabs-link-active-color:                  $gray-700 !default;
-$nav-tabs-link-active-bg:                     $body-bg !default;
+$nav-tabs-link-active-color:                  theme-color("secondary") !default;
+$nav-tabs-link-active-bg:                     $white !default;
 $nav-tabs-link-active-border-color:           #ddd !default;
 
 $nav-pills-border-radius:     $border-radius !default;

@@ -31,7 +31,7 @@
               {{ link.text }}
             </a>
             <div class="dropdown-menu">
-              <h4 class="d-none d-lg-block text-info">{{ link.text }}</h4>
+              <h4 class="d-none d-lg-block text-info font-serif font-weight-bold">{{ link.text }}</h4>
               <div class="dropdown-menu-2-col">
                 <a v-for="child in link.children" class="dropdown-item" :href="`http://hcflgov.net/${child.ItemUrl}`" :target="linkTargets">
                   {{ child.DisplayName }}

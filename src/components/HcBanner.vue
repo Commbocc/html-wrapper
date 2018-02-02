@@ -7,7 +7,7 @@
       </h1>
 
       <nav aria-label="breadcrumbs">
-        <ol class="breadcrumb hc-banner-breadcrumb small mb-0">
+        <ol class="breadcrumb hc-banner-breadcrumb mb-0">
           <li v-for="(link, text, index) in crumbs" class="breadcrumb-item">
             <a :href="link">{{ text }}</a>
           </li>
