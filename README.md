@@ -17,6 +17,9 @@ Use the HTML below as a base layout.
   </title>
 
   <link rel="stylesheet" href="https://commbocc.github.io/html-wrapper/static/css/app.css">
+  <noscript>
+    <link rel="stylesheet" href="https://commbocc.github.io/html-wrapper/static/css/noscript.css">
+  </noscript>
 </head>
 <body>
   <noscript>
