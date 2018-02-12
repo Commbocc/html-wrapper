@@ -1,4 +1,5 @@
 .hc-card {
+  @extend .mb-3 ;
 
   .card-header {
     padding: 0;
@@ -28,10 +29,10 @@
 }
 
 .hc-card-columns-newsroom {
-  @include media-breakpoint-only(sm) {
+  @include media-breakpoint-up(sm) {
     column-count: 2;
   }
-  @include media-breakpoint-only(md) {
+  @include media-breakpoint-only(lg) {
     column-count: 3;
   }
   @include media-breakpoint-only(xl) {
