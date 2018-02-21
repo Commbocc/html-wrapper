@@ -28,6 +28,19 @@
   }
 }
 
+.hc-gradient-card {
+  background-size: cover !important;
+  background-position: center !important;
+  text-shadow: 1px 1px 2px #000;
+}
+a.hc-gradient-card {
+  opacity: 0.8;
+}
+a.hc-gradient-card:hover {
+  opacity: 1;
+  text-decoration: none !important;
+}
+
 .hc-card-columns-newsroom {
   @include media-breakpoint-up(sm) {
     column-count: 2;
