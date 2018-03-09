@@ -5,6 +5,12 @@
   }
 }
 
+.btn-outline-primary, .btn-outline-success, .btn-outline-warning, .btn-outline-info {
+  &:hover {
+    color: #fff;
+  }
+}
+
 .btn-wrap {
   white-space: normal !important;
 }
