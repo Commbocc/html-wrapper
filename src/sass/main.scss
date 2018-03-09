@@ -1,8 +1,5 @@
 @import 'fonts';
-@import '~bootstrap/scss/functions';
-@import 'variables';
-// @import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
+@import 'custom';
 @import '~bootstrap/scss/bootstrap';
 @import '~font-awesome/css/font-awesome.min.css';
 
@@ -31,5 +28,5 @@
 
 //
 #hc-footer {
-  @include gradient-bg(theme-color("secondary"), 2%);
+  @include gradient-bg($secondary, 2%);
 }
