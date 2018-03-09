@@ -15,6 +15,12 @@
 	position: sticky;
 }
 
+// external links
+a[target=_blank]:after {
+  font-family: 'Segoe UI Symbol' !important;
+  content: " \29C9";
+}
+
 // components
 @import 'banner';
 @import 'breadcrumbs';
