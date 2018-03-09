@@ -21,7 +21,7 @@
         </div>
 
         <div class="col-md-4 mb-4 order-md-12">
-          <ul class="list-inline mb-0">
+          <ul class="list-inline mb-0 hide-external-indicator">
             <li v-for="link in socialLinks" class="list-inline-item">
               <a :href="link.href" :title="link.name" class="text-white" target="_blank">
                 <i class="fa fa-fw" :class="link.iconClass"></i>
@@ -33,7 +33,7 @@
       </section>
 
       <p class="text-center small mt-3 mb-0">
-        <a href="https://goo.gl/maps/jetXJdK71mu" class="text-white" target="_blank">
+        <a href="https://goo.gl/maps/jetXJdK71mu" class="text-white hide-external-indicator" target="_blank">
           601 E. Kennedy Blvd.<br>
           Tampa, FL 33602
         </a>

@@ -7,18 +7,12 @@
 @import 'mixins/gradients';
 
 .sticky {
-	position: sticky;
-	top: $spacer;
+  position: sticky;
+  top: $spacer;
 }
 
 .sticky-top {
-	position: sticky;
-}
-
-// external links
-a[target=_blank]:after {
-  font-family: 'Segoe UI Symbol' !important;
-  content: " \29C9";
+  position: sticky;
 }
 
 // components
@@ -27,6 +21,7 @@ a[target=_blank]:after {
 @import 'buttons';
 @import 'cards';
 @import 'jumbotron';
+@import 'links';
 @import 'navbar';
 @import 'navigation';
 @import 'rte';
