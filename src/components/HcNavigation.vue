@@ -14,7 +14,7 @@
 
         <ul class="navbar-nav ml-auto">
 
-          <li class="nav-item order-lg-12 dropdown">
+          <li v-if="showForm" class="nav-item order-lg-12 dropdown">
             <a @click="focusSearch()" href="#" class="nav-link dropdown-toggle d-none d-lg-inline-block" title="Search" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa fa-fw fa-search"></i>
             </a>
@@ -26,7 +26,9 @@
             </div>
           </li>
 
-          <li v-for="link in navLinks" class="nav-item order-lg-1 dropdown">
+          <slot v-if="customNav"></slot>
+
+          <li v-else v-for="link in navLinks" class="nav-item order-lg-1 dropdown">
             <a href="#" class="nav-link dropdown-toggle" :class="link.linkClass" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ link.text }}
             </a>
@@ -67,6 +69,10 @@ export default {
       default: '_self'
     },
     // search form props
+    showForm: {
+      type: Boolean,
+      default: true
+    },
     formAction: {
       type: String,
       default: 'http://www.hillsboroughcounty.org/en/search'
@@ -82,6 +88,10 @@ export default {
     formShowFilters: {
       type: Boolean,
       default: true
+    },
+    customNav: {
+      type: Boolean,
+      default: false
     }
   },
   components: {

@@ -8,9 +8,7 @@
 
       <nav aria-label="breadcrumbs">
         <ol class="breadcrumb hc-banner-breadcrumb mb-0">
-          <li v-for="(link, text, index) in crumbs" class="breadcrumb-item">
-            <a :href="link">{{ text }}</a>
-          </li>
+          <slot></slot>
           <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
         </ol>
       </nav>
@@ -25,12 +23,6 @@ export default {
     title: {
       type: String,
       required: true
-    },
-    crumbs: {
-      type: Object,
-      default: function () {
-        return {'Home': '/'}
-      }
     }
   }
 }
