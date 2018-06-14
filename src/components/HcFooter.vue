@@ -2,8 +2,7 @@
   <footer id="hc-footer" class="bg-secondary text-white py-5">
     <div class="container">
 
-      <section class="row align-items-center text-center">
-
+      <div class="row align-items-center text-center">
         <div class="col-md-4 mb-4 order-md-4">
           <ul class="list-inline mb-0">
             <li v-for="link in footerLinks" class="list-inline-item mx-3">
@@ -23,14 +22,13 @@
         <div class="col-md-4 mb-4 order-md-12">
           <ul class="list-inline mb-0 hide-external-indicator">
             <li v-for="link in socialLinks" class="list-inline-item">
-              <a :href="link.href" :title="link.name" class="text-white" target="_blank">
-                <i class="fa fa-fw" :class="link.iconClass"></i>
+              <a :href="link.href" :title="link.name" class="text-white" target="_blank" :aria-label="link.name">
+                <span class="fa fa-fw" :class="link.iconClass" aria-hidden="true"></span>
               </a>
             </li>
           </ul>
         </div>
-
-      </section>
+      </div>
 
       <p class="text-center small mt-3 mb-0">
         <a href="https://goo.gl/maps/jetXJdK71mu" class="text-white hide-external-indicator" target="_blank">

@@ -1,5 +1,5 @@
 <template>
-  <nav id="hc-nav" class="navbar navbar-expand-lg navbar-light bg-white">
+  <nav id="hc-nav" aria-label="Site Navigation" class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
 
       <a class="navbar-brand" :href="logoHref" :target="logoTarget">
@@ -16,8 +16,10 @@
 
           <li v-if="showForm" class="nav-item order-lg-12 dropdown">
             <a @click="focusSearch()" href="#" class="nav-link dropdown-toggle d-none d-lg-inline-block" title="Search" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-fw fa-search"></i>
+              <span class="fa fa-fw fa-search" aria-hidden="true"></span>
+              <span class="sr-only">Search</span>
             </a>
+
             <div ref="searchDropdown" class="dropdown-menu">
 
               <!-- search -->

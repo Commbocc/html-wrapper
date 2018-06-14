@@ -17,44 +17,30 @@ Use the HTML below as a base layout.
   </title>
 
   <link rel="stylesheet" href="https://commbocc.github.io/html-wrapper/static/css/app.css">
-  <noscript>
-    <link rel="stylesheet" href="https://commbocc.github.io/html-wrapper/static/css/noscript.css">
-  </noscript>
 </head>
 <body>
-  <noscript>
-    <center>
-      <strong>This site is best viewed with Javascript Enabled.</strong>
-      <br>
-      <em><a href="http://www.enable-javascript.com/" target="_blank">How to enable JavaScript in your browser.</a></em>
-    </center>
-    <hr>
-  </noscript>
+  <div id="hc-main">
 
-  <main id="hc-main">
+    <nav is="hc-navigation" logo-href="./"></nav>
 
-    <header>
-      <nav is="hc-navigation" logo-href="/"></nav>
+    <ol is="hc-banner" title="Page Title">
+      <!-- ancestors -->
+      <li class="breadcrumb-item"><a href="./">Home</a></li>
+    </ol>
 
-      <ol is="hc-banner" title="Banner Title">
-        <!-- THE PAGES ANCESTORS -->
-        <li class="breadcrumb-item"><a href="/">Home</a></li>
-      </ol>
-    </header>
-
-    <section class="bg-white py-5">
+    <section class="bg-white py-5" aria-labelledby="dynamicallyGeneratedSectionId">
       <div class="container">
 
+        <h2 id="dynamicallyGeneratedSectionId">Section Heading</h2>
 
-      <!-- PLACE CONTENT HERE -->
-
+        <!-- PLACE CONTENT HERE -->
 
       </div>
     </section>
 
     <footer is="hc-footer"></footer>
 
-  </main>
+  </div>
 
   <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/manifest.js"></script>
   <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/vendor.js"></script>
