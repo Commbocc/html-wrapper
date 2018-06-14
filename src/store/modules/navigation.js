@@ -54,19 +54,19 @@ export const footer = {
     links: [
       {
         text: 'Board of County Commissioners',
-        href: 'http://www.hillsboroughcounty.org/en/government/board-of-county-commissioners'
+        href: 'https://hillsboroughcounty.org/government/board-of-county-commissioners'
       },
       {
         text: 'County Locations',
-        href: 'http://www.hillsboroughcounty.org/en/residents/citizens/county-locations'
+        href: 'https://hillsboroughcounty.org/residents/citizens/county-locations'
       },
       {
         text: 'Jobs',
-        href: 'http://www.hillsboroughcounty.org/en/about-hillsborough/jobs'
+        href: 'https://hillsboroughcounty.org/about-hillsborough/jobs'
       },
       {
         text: 'Contact Us',
-        href: 'http://www.hillsboroughcounty.org/en/about-hillsborough/contact-us'
+        href: 'https://hillsboroughcounty.org/about-hillsborough/contact-us'
       }
     ]
   }

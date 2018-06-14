@@ -35,7 +35,7 @@
             <div class="dropdown-menu">
               <h4 class="d-none d-lg-block text-info font-serif font-weight-bold">{{ link.text }}</h4>
               <div class="dropdown-menu-2-col">
-                <a v-for="child in link.children" class="dropdown-item" :href="`http://hcflgov.net/${child.ItemUrl}`" :target="linkTargets">
+                <a v-for="child in link.children" class="dropdown-item" :href="`https://hillsboroughcounty.org/${child.ItemUrl}`" :target="linkTargets">
                   {{ child.DisplayName }}
                 </a>
               </div>
@@ -62,7 +62,7 @@ export default {
   props: {
     logoHref: {
       type: String,
-      default: 'http://hcflgov.net'
+      default: 'https://hillsboroughcounty.org'
     },
     logoTarget: {
       type: String,
@@ -75,7 +75,7 @@ export default {
     },
     formAction: {
       type: String,
-      default: 'http://www.hillsboroughcounty.org/en/search'
+      default: 'https://hillsboroughcounty.org/search'
     },
     formMethod: {
       type: String,

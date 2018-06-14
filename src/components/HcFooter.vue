@@ -15,7 +15,7 @@
         </div>
 
         <div class="col-md-4 mb-4 order-md-1">
-          <a href="http://hcflgov.net" :target="linkTargets">
+          <a href="https://hillsboroughcounty.org" :target="linkTargets">
             <img :src="logoUrl" alt="Hillsborough County Logo" class="logo img-fluid">
           </a>
         </div>

@@ -73,11 +73,11 @@ Refer to the [Bootstrap documentation](https://getbootstrap.com/).
 
 > the props below show the default values
 
-* `logo-href="http://hcflgov.net"` - the URL (absolute or relative) that the logo links to.
+* `logo-href="https://hillsboroughcounty.org"` - the URL (absolute or relative) that the logo links to.
 * `logo-target="_self"` - the [HTML target attribute](https://www.w3schools.com/tags/att_a_target.asp) of the logo.
 * `link-targets="_self"` - the [HTML target attribute](https://www.w3schools.com/tags/att_a_target.asp) of the dropdown links.
 * `:show-form="true"` - Show the search form dropdown in the navbar.
-* `form-action="http://www.hillsboroughcounty.org/en/search"` - the [HTML form Action attribute](https://www.w3schools.com/tags/att_form_action.asp) of the search form.
+* `form-action="https://hillsboroughcounty.org/en/search"` - the [HTML form Action attribute](https://www.w3schools.com/tags/att_form_action.asp) of the search form.
 * `form-method="get"` - the [HTML form method attribute](https://www.w3schools.com/tags/att_form_method.asp) of the search form.
 * `form-target="_self"` - the [HTML form target attribute](https://www.w3schools.com/tags/att_form_target.asp) of the search form.
 * `:form-show-filters="true"` - whether or not to show the content type filters below the search form.
