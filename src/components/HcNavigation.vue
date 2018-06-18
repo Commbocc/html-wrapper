@@ -54,8 +54,7 @@
 
 <script>
 import Vue from 'vue'
-import { mapState } from 'vuex'
-import NavSearchForm from '@/components/HcNavSearchForm'
+import NavSearchForm from './HcNavSearchForm'
 import NavLinks from '@/mixins/NavLinks'
 import LinkTargets from '@/mixins/LinkTargets'
 
@@ -96,12 +95,12 @@ export default {
       default: false
     }
   },
-  components: {
-    NavSearchForm
+  components: { NavSearchForm },
+  data () {
+    return {
+      logoUrl: 'https://github.com/Commbocc/html-wrapper/raw/master/src/assets/hc-logo-horizontal-RGB.png'
+    }
   },
-  computed: mapState({
-    logoUrl: state => state.navigation.logoUrl
-  }),
   methods: {
     focusSearch () {
       Vue.nextTick(() => {
