@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <fieldset v-if="showFilters">
+    <fieldset v-if="showFilters" class="d-none d-lg-block">
       <legend class="sr-only">Filters</legend>
       <div class="d-flex justify-content-center small">
         <label v-for="filter in filters" class="px-2">
