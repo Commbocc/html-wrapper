@@ -2,6 +2,9 @@
   <nav id="hc-nav" aria-label="Site Navigation" class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
 
+      <!-- https://www.w3.org/WAI/GL/2016/WD-WCAG20-TECHS-20160105/G1 -->
+      <a :href="skipContentLink" class="sr-only">Skip to Main Content</a>
+
       <a class="navbar-brand" :href="logoHref" :target="logoTarget">
         <img :src="logoUrl" alt="Hillsborough County Logo" class="logo">
       </a>
@@ -93,6 +96,10 @@ export default {
     customNav: {
       type: Boolean,
       default: false
+    },
+    skipContentLink: {
+      type: Boolean,
+      default: '#main-content'
     }
   },
   components: { NavSearchForm },

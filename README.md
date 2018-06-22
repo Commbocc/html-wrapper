@@ -21,7 +21,10 @@ Use the HTML below as a base layout.
 <body>
   <div id="hc-main">
 
-    <nav is="hc-navigation" logo-href="./"></nav>
+    <nav is="hc-navigation" logo-href="./" skip-content-link="#main-content"></nav>
+
+    <!-- https://www.w3.org/WAI/GL/2016/WD-WCAG20-TECHS-20160105/G1 -->
+    <div id="main-content"></div>
 
     <ol is="hc-banner" title="Page Title">
       <!-- ancestors -->
