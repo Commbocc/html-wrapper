@@ -23,7 +23,7 @@
           <ul class="list-inline mb-0 hide-external-indicator">
             <li v-for="link in socialLinks" class="list-inline-item">
               <a :href="link.href" :title="link.name" class="text-white" target="_blank" :aria-label="link.name">
-                <span class="fa fa-fw" :class="link.iconClass" aria-hidden="true"></span>
+                <span class="fa-fw" :class="link.iconClass" aria-hidden="true"></span>
               </a>
             </li>
           </ul>
@@ -70,27 +70,27 @@ export default {
         {
           name: 'Facebook',
           href: 'https://www.facebook.com/HillsboroughFL/',
-          iconClass: 'fa-facebook'
+          iconClass: 'fab fa-facebook'
         },
         {
           name: 'Twitter',
           href: 'https://twitter.com/HillsboroughFL',
-          iconClass: 'fa-twitter'
+          iconClass: 'fab fa-twitter'
         },
         {
           name: 'YouTube',
           href: 'https://www.youtube.com/user/HillsboroughCounty',
-          iconClass: 'fa-youtube'
+          iconClass: 'fab fa-youtube'
         },
         {
           name: 'InstaGram',
           href: 'https://www.instagram.com/hillsboroughfl/',
-          iconClass: 'fa-instagram'
+          iconClass: 'fab fa-instagram'
         },
         {
           name: 'LinkedIn',
           href: 'https://www.linkedin.com/company/hillsborough-county',
-          iconClass: 'fa-linkedin'
+          iconClass: 'fab fa-linkedin'
         }
       ],
       logoUrl: 'https://raw.githubusercontent.com/Commbocc/html-wrapper/master/src/assets/hc-logo-horizontal-RGB_drkbgrd.png'

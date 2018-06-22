@@ -19,7 +19,7 @@
 
           <li v-if="showForm" class="nav-item order-lg-12 dropdown">
             <a @click="focusSearch()" href="#" class="nav-link dropdown-toggle d-none d-lg-inline-block" title="Search" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="fa fa-fw fa-search" aria-hidden="true"></span>
+              <span class="fas fa-fw fa-search" aria-hidden="true"></span>
               <span class="sr-only">Search</span>
             </a>
 
