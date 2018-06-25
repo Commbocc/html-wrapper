@@ -34,14 +34,14 @@
           <slot v-if="customNav"></slot>
 
           <li v-else v-for="link in navLinks" class="nav-item order-lg-1 dropdown">
-            <a href="#" class="nav-link dropdown-toggle" :class="link.linkClass" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ link.text }}
+            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ link.Name }}
             </a>
             <div class="dropdown-menu">
-              <h4 class="d-none d-lg-block text-info font-serif font-weight-bold">{{ link.text }}</h4>
+              <h4 class="d-none d-lg-block text-info font-serif font-weight-bold">{{ link.Name }}</h4>
               <div class="dropdown-menu-2-col">
-                <a v-for="child in link.children" class="dropdown-item" :href="`https://hillsboroughcounty.org/${child.ItemUrl}`" :target="linkTargets">
-                  {{ child.DisplayName }}
+                <a v-for="child in link.Children" class="dropdown-item" :href="navbarUrl(child)" :target="linkTargets">
+                  {{ child.Name }}
                 </a>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default {
       default: false
     },
     skipContentLink: {
-      type: Boolean,
+      type: String,
       default: '#main-content'
     }
   },

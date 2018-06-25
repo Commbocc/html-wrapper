@@ -13,6 +13,10 @@
         display: none;
       }
     }
+    // highlight last item in list
+    & > .nav-item:last-of-type > .dropdown-toggle {
+      color: $primary;
+    }
   }
 
   //
