@@ -22,7 +22,7 @@ export default {
       })
     },
     navbarUrl (item) {
-      return (this.crossOrigin) ? this.crossOriginRoot + item.Url : item.Url
+      return (this.crossOrigin) ? this.crossOriginRoot + item.Path : item.Path
     }
   },
   mounted () {
