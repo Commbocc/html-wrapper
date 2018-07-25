@@ -61,13 +61,13 @@ export default {
         {
           key: 'events',
           text: 'Events',
-          icon: ' fas fa-calendar',
+          icon: ' far fa-calendar-alt',
           checked: false
         },
         {
           key: 'locations',
           text: 'Locations',
-          icon: ' fas fa-map-marker',
+          icon: ' fas fa-map-marker-alt',
           checked: false
         },
         {
