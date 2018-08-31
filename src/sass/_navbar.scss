@@ -62,6 +62,8 @@
   .form-control, .input-group-btn > .btn {
     @include media-breakpoint-up(lg) {
       font-size: 3.5rem;
+      -webkit-appearance: none;
+      height: 5rem;
     }
   }
   .form-control {
