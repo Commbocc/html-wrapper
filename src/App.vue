@@ -1,12 +1,8 @@
 <script>
-import HcNavigation from './components/HcNavigation'
-import HcBanner from './components/HcBanner'
-import HcFooter from './components/HcFooter'
+import Components from './mixins/Components.js'
 
 export default {
-  components: {
-    HcNavigation, HcBanner, HcFooter
-  }
+  mixins: [Components]
 }
 </script>
 

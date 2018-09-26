@@ -7,6 +7,11 @@
 // global
 @import 'mixins/gradients';
 
+#hc-main,
+html, body {
+  height: 100%;
+}
+
 .sticky {
   position: sticky;
   top: $spacer;

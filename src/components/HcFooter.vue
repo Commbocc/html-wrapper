@@ -37,6 +37,8 @@
         </a>
       </p>
 
+      <!-- TODO: google translate -->
+
     </div>
   </footer>
 </template>

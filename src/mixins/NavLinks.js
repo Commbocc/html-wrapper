@@ -1,3 +1,5 @@
+let navEnpoint = 'https://hillsboroughcounty.org/endpoints/navbar.aspx'
+
 export default {
   props: {
     crossOrigin: {
@@ -16,8 +18,7 @@ export default {
   },
   methods: {
     fetchNavbar () {
-      let url = 'https://hillsboroughcounty.org/endpoints/navbar.aspx'
-      return this.$http.get(url).then(res => {
+      return this.$http.get(navEnpoint).then(res => {
         this.navLinks = res.body
       })
     },
