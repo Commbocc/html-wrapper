@@ -20,13 +20,17 @@
         </div>
 
         <div class="col-md-4 mb-4 order-md-12">
-          <ul class="list-inline mb-0 hide-external-indicator">
+          <ul class="list-inline my-2 hide-external-indicator">
             <li v-for="link in socialLinks" class="list-inline-item">
               <a :href="link.href" :title="link.name" class="text-white" target="_blank" :aria-label="link.name">
                 <span class="fa-fw" :class="link.iconClass" aria-hidden="true"></span>
               </a>
             </li>
           </ul>
+
+          <!-- google translate -->
+          <div id="google_translate_element"></div>
+
         </div>
       </div>
 
@@ -36,8 +40,6 @@
           Tampa, FL 33602
         </a>
       </p>
-
-      <!-- TODO: google translate -->
 
     </div>
   </footer>
