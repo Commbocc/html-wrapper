@@ -83,14 +83,6 @@ Use the HTML below as a base layout. See the [Demo](https://commbocc.github.io/h
   <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/vendor.js"></script>
   <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/app.js"></script>
 
-  <!-- google translate -->
-  <script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,en,es,fr,ht,pt,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-  }
-  </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 </body>
 </html>
 ```
@@ -155,8 +147,6 @@ A [Vue Slot](https://vuejs.org/v2/guide/components.html#Single-Slot) is used to 
 > the props below show the default values
 
 * `link-targets="_self"` - the [HTML target attribute](https://www.w3schools.com/tags/att_a_target.asp) of the footer links.
-
-An element, `#google_translate_element`, exists in the footer below the social icons to house the Google Translate widget. Use the provided code above or create your own [here](https://translate.google.com/manager/website).
 
 ## Build Setup
 

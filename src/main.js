@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App'
 import VueResource from 'vue-resource'
 import 'bootstrap'
+import './assets/js/google/translate'
 
 Vue.use(VueResource)
 
