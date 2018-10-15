@@ -29,7 +29,12 @@
           </ul>
 
           <!-- google translate -->
-          <div id="google_translate_element"></div>
+          <div id="google_translate_element" class="my-2"></div>
+
+          <!-- website feedback -->
+          <a href="https://hcflgov.formstack.com/forms/website_feedback" target="_blank" class="hide-external-indicator small text-white">
+            Provide Website Feedback
+          </a>
 
         </div>
       </div>
