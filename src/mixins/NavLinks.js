@@ -1,4 +1,4 @@
-let navEnpoint = 'https://hillsboroughcounty.org/endpoints/navbar.aspx'
+let navEnpoint = 'https://www.hillsboroughcounty.org/apis/v1/endpoints/navbar'
 
 export default {
   props: {
