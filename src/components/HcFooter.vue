@@ -3,7 +3,7 @@
     <div class="container">
 
       <div class="row align-items-center text-center">
-        <div class="col-md-4 mb-4 order-md-4">
+        <div class="col-lg-6 col-md-12 mb-4 order-md-2">
           <ul class="list-inline mb-0">
             <li v-for="link in footerLinks" class="list-inline-item mx-3">
               <a :href="link.href" class="text-white" :target="linkTargets">
@@ -13,13 +13,13 @@
           </ul>
         </div>
 
-        <div class="col-md-4 mb-4 order-md-1">
+        <div class="col-lg-3 col-md-6 mb-4 order-lg-1 order-md-3">
           <a href="https://hillsboroughcounty.org" :target="linkTargets">
             <img :src="logoUrl" alt="Hillsborough County Logo" class="logo img-fluid">
           </a>
         </div>
 
-        <div class="col-md-4 mb-4 order-md-12">
+        <div class="col-lg-3 col-md-6 mb-4 order-md-12">
           <ul class="list-inline my-2 hide-external-indicator">
             <li v-for="link in socialLinks" class="list-inline-item">
               <a :href="link.href" :title="link.name" class="text-white" target="_blank" :aria-label="link.name">
@@ -63,6 +63,10 @@ export default {
           href: 'https://hillsboroughcounty.org/government/board-of-county-commissioners'
         },
         {
+          text: 'Contact Us',
+          href: 'https://hillsboroughcounty.org/about-hillsborough/contact-us'
+        },
+        {
           text: 'County Locations',
           href: 'https://hillsboroughcounty.org/residents/citizens/county-locations'
         },
@@ -71,8 +75,12 @@ export default {
           href: 'https://hillsboroughcounty.org/about-hillsborough/jobs'
         },
         {
-          text: 'Contact Us',
-          href: 'https://hillsboroughcounty.org/about-hillsborough/contact-us'
+          text: 'HCFL Alert Information',
+          href: 'https://hillsboroughcounty.org/residents/public-safety/emergency-management/hcfl-alert'
+        },
+        {
+          text: 'Accessibility',
+          href: 'https://hillsboroughcounty.org/government/departments/ada'
         }
       ],
       socialLinks: [

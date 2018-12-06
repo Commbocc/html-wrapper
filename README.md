@@ -79,9 +79,9 @@ Use the HTML below as a base layout. See the [Demo](https://commbocc.github.io/h
 
   </div><!-- #hc-main -->
 
-  <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/manifest.js"></script>
-  <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/vendor.js"></script>
-  <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/app.js"></script>
+  <script src="https://commbocc.github.io/html-wrapper/static/js/manifest.js"></script>
+  <script src="https://commbocc.github.io/html-wrapper/static/js/vendor.js"></script>
+  <script src="https://commbocc.github.io/html-wrapper/static/js/app.js"></script>
 
 </body>
 </html>

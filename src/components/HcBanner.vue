@@ -1,5 +1,5 @@
 <template lang="html">
-  <header class="hc-banner jumbotron jumbotron-fluid bg-info text-white my-0 py-4">
+  <div class="hc-banner jumbotron jumbotron-fluid bg-info text-white my-0 py-4">
     <div class="container">
 
       <h1 class="hc-banner-title font-weight-bold m-0">
@@ -14,7 +14,7 @@
       </nav>
 
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
