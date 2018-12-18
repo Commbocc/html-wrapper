@@ -30,6 +30,7 @@
 
     .dropdown-item {
       color: theme-color('secondary');
+      white-space: normal;
       &:hover {
         background: rgba(theme-color('info'), 0.075)
       }

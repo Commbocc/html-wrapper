@@ -115,11 +115,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-#hc-footer {
-  .logo {
-    max-height: 50px;
-  }
-}
-</style>

@@ -1,11 +1,28 @@
 @import 'fonts';
+
+/*!
+* Hillsborough County HTML Wrapper
+* https://github.com/Commbocc/html-wrapper
+*/
 @import 'custom';
 @import '~bootstrap/scss/bootstrap';
-@import '~@fortawesome/fontawesome-free/css/all.css';
-@import 'print';
 
 // global
+@import 'print';
 @import 'mixins/gradients';
+
+// components
+@import 'banner';
+@import 'breadcrumbs';
+@import 'buttons';
+@import 'cards';
+@import 'jumbotron';
+@import 'links';
+@import 'navbar';
+@import 'navigation';
+@import 'rte';
+@import 'tables';
+@import 'footer';
 
 #hc-main,
 html, body {
@@ -21,19 +38,6 @@ html, body {
   position: sticky;
 }
 
-// components
-@import 'banner';
-@import 'breadcrumbs';
-@import 'buttons';
-@import 'cards';
-@import 'jumbotron';
-@import 'links';
-@import 'navbar';
-@import 'navigation';
-@import 'rte';
-@import 'tables';
-
-//
-#hc-footer {
-  @include gradient-bg($secondary, 2%);
+.text-shadow {
+  text-shadow: #000 2px 2px 3px;
 }
