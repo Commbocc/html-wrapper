@@ -60,14 +60,7 @@
 
 // search
 #hc-nav-search-input-group {
-  .form-control, .input-group-btn > .btn {
-    @include media-breakpoint-up(lg) {
-      font-size: 3.5rem;
-      -webkit-appearance: none;
-      height: 5rem;
-    }
-  }
-  .form-control {
+  & > .form-control {
     @extend .font-serif ;
     background: none;
     font-style: italic;
@@ -75,5 +68,13 @@
     box-shadow: none;
     border: 0;
     padding: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    & > .form-control, .input-group-append > .btn {
+      height: calc(5rem + 2px);
+      font-size: 3.25rem;
+      -webkit-appearance: none;
+    }
   }
 }

@@ -8,11 +8,11 @@
 
         <div id="hc-nav-search-input-group" class="input-group input-group-lg">
           <input class="form-control" name="q" type="search" placeholder="Search For..." aria-label="Search Input" ref="searchInput" required>
-          <span class="input-group-btn">
+          <div class="input-group-append">
             <button type="submit" class="btn btn-link">
               <span class="fas fa-fw fa-search" aria-label="Search"></span>
             </button>
-          </span>
+          </div>
         </div>
 
         <hr class="mt-2 mt-lg-0 mb-0 mb-lg-2">
