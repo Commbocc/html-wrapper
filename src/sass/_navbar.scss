@@ -77,4 +77,12 @@
       -webkit-appearance: none;
     }
   }
+
+}
+
+// always show search bar at md breakpint & down
+.hc-nav-search-dropdown-menu {
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
 }

@@ -17,13 +17,13 @@
 
         <ul class="navbar-nav ml-auto">
 
-          <li v-if="showForm" class="nav-item order-lg-12 dropdown">
+          <li id="hc-nav-search-nav-item" v-if="showForm" class="nav-item order-lg-12 dropdown">
             <a @click="focusSearch()" href="#" class="nav-link dropdown-toggle d-none d-lg-inline-block" title="Search" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="fas fa-fw fa-search" aria-hidden="true"></span>
               <span class="sr-only">Search</span>
             </a>
 
-            <div ref="searchDropdown" class="dropdown-menu">
+            <div class="dropdown-menu hc-nav-search-dropdown-menu">
 
               <!-- search -->
               <NavSearchForm ref="searchForm" :action="formAction" :method="formMethod" :target="formTarget" show-filters="formShowFilters" />
@@ -113,18 +113,7 @@ export default {
       Vue.nextTick(() => {
         this.$refs.searchForm.$refs.searchInput.focus()
       })
-    },
-    showSearchWhenMobile () {
-      if (this.$refs.navToggler.offsetLeft > 0) {
-        this.$refs.searchDropdown.classList.add('show')
-      } else {
-        this.$refs.searchDropdown.classList.remove('show')
-      }
     }
-  },
-  mounted () {
-    window.onload = this.showSearchWhenMobile
-    window.onresize = this.showSearchWhenMobile
   }
 }
 </script>
