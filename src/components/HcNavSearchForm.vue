@@ -22,12 +22,15 @@
 
     <fieldset v-if="showFilters" class="d-none d-lg-block">
       <legend class="sr-only">Filters</legend>
-      <div class="d-flex justify-content-center small">
-        <label v-for="filter in filters" class="px-2">
-          <input type="checkbox" :value="filter.key" :checked="filter.checked" :aria-label="filter.text">
-          <span class="fa-fw" :class="filter.icon" aria-hidden="true"></span>
-          {{ filter.text }}
-        </label>
+
+      <div class="d-flex justify-content-center">
+        <div v-for="filter in filters" class="form-check form-check-inline small">
+          <input class="form-check-input" type="checkbox" name="t" :id="`search-filter-${filter.key}`" :value="filter.key" :checked="filter.checked" :aria-label="filter.text">
+          <label class="form-check-label" :for="`search-filter-${filter.key}`">
+            <span class="fa-fw" :class="filter.icon" aria-hidden="true"></span>
+            {{ filter.text }}
+          </label>
+        </div>
       </div>
     </fieldset>
 
@@ -44,13 +47,13 @@ export default {
           key: 'article',
           text: 'Web Pages',
           icon: ' far fa-file',
-          checked: true
+          checked: false
         },
         {
           key: 'story',
           text: 'Newsroom Stories',
           icon: ' far fa-newspaper',
-          checked: true
+          checked: false
         },
         {
           key: 'documents',
