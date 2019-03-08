@@ -1,3 +1,8 @@
+**This project is no longer being maintained, please refer to the following:**
+
+* [https://github.com/Commbocc/hcflgov-vue-html-wrapper](https://github.com/Commbocc/hcflgov-vue-html-wrapper)
+* [https://www.npmjs.com/package/@hcflgov/vue-html-wrapper](https://www.npmjs.com/package/@hcflgov/vue-html-wrapper)
+
 # Hillsborough County HTML Wrapper
 
 > A Vue.js project
