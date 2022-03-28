@@ -1,32 +1,31 @@
-let navEnpoint = 'https://www.hillsboroughcounty.org/apis/v1/endpoints/navbar'
+// let navEnpoint = 'https://www.hillsboroughcounty.org/apis/v1/endpoints/navbar'
+import navbarJson from '../assets/navbar.json'
 
 export default {
-  props: {
-    crossOrigin: {
-      type: Boolean,
-      default: true
-    },
-    crossOriginRoot: {
-      type: String,
-      default: 'https://hillsboroughcounty.org'
-    }
-  },
-  data () {
+  // props: {
+  //   crossOrigin: {
+  //     type: Boolean,
+  //     default: true
+  //   },
+  //   crossOriginRoot: {
+  //     type: String,
+  //     default: 'https://hillsboroughcounty.org'
+  //   }
+  // },
+  data() {
     return {
       navLinks: []
     }
   },
   methods: {
-    fetchNavbar () {
-      return this.$http.get(navEnpoint).then(res => {
-        this.navLinks = res.body
-      })
+    fetchNavbar() {
+      this.navLinks = navbarJson
     },
-    navbarUrl (item) {
-      return (this.crossOrigin) ? this.crossOriginRoot + item.Path : item.Path
+    navbarUrl(item) {
+      return item.Path
     }
   },
-  mounted () {
+  mounted() {
     this.fetchNavbar()
   }
 }

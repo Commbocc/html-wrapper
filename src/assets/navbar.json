@@ -1,0 +1,331 @@
+[
+  {
+    "Children": [
+      {
+        "Guid": "1fd37855-fb65-455d-8a93-c2912c55951d",
+        "Name": "Animals and Pets",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/residents/animals-and-pets"
+      },
+      {
+        "Guid": "43be8a74-dcd2-43e3-a54e-0083538c0ee9",
+        "Name": "Citizens",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/residents/citizens"
+      },
+      {
+        "Guid": "b93f0add-c7b1-4dc2-a10c-eb66e2182a88",
+        "Name": "Families",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/residents/families"
+      },
+      {
+        "Guid": "a45d25e3-b329-4dcf-b9ad-9f97562b6cdc",
+        "Name": "Property Owners and Renters",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/residents/property-owners-and-renters"
+      },
+      {
+        "Guid": "01deb159-f6f2-4eab-9552-daef202413be",
+        "Name": "Public Safety",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/residents/public-safety"
+      },
+      {
+        "Guid": "a48af759-c81b-411f-9c3a-0f07d567c472",
+        "Name": "Recreation and Culture",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/residents/recreation-and-culture"
+      },
+      {
+        "Guid": "fdf63233-a6a3-4bab-9e79-959890d6e7bf",
+        "Name": "Social Services",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/residents/social-services"
+      },
+      {
+        "Guid": "22a19116-a3e4-49b0-bff9-03266133fda4",
+        "Name": "Stay Safe",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/residents/stay-safe"
+      },
+      {
+        "Guid": "c9866301-a227-4ac6-9d47-fd0c9caf6607",
+        "Name": "Sustainability and Green",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/residents/sustainability-and-green"
+      }
+    ],
+    "Guid": "34cb3843-b435-4992-9957-6b68496e39a2",
+    "Name": "Residents",
+    "Description": "",
+    "Path": "https://www.hillsboroughcounty.org/en/residents",
+    "FeaturedLink": {
+      "Excerpt": "Request services from Hillsborough County online 24 hours-a-day, 7 days-a-week...",
+      "Url": "https://service.hillsboroughcounty.org/311/",
+      "ImgSrc": "/library/hillsborough/system/logos/atyourservicelogo.png",
+      "Guid": "56d4f47f-ad19-4331-a31b-3aa8b1e72e3c",
+      "Name": "At Your Service",
+      "Description": "Request services from Hillsborough County online 24 hours-a-day, 7 days-a-week...",
+      "Path": "https://service.hillsboroughcounty.org/311/"
+    }
+  },
+  {
+    "Children": [
+      {
+        "Guid": "2bd1a9af-251a-4393-990d-2f8d0caa1c64",
+        "Name": "Business Community",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/businesses/business-community"
+      },
+      {
+        "Guid": "a21ec51b-dd21-4344-81bf-e2d91ffe99d3",
+        "Name": "Entrepreneur and Small Business Support",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/businesses/entrepreneur-and-small-business-support"
+      },
+      {
+        "Guid": "ae402569-6c4e-49a1-9dbb-d6f7db5185b1",
+        "Name": "Doing Business With Hillsborough",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/businesses/doing-business-with-hillsborough"
+      },
+      {
+        "Guid": "11c7076f-4350-412c-8889-7d7cd2e32f6a",
+        "Name": "Economic Development",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/businesses/economic-development"
+      },
+      {
+        "Guid": "d06c5a0c-afd9-4654-8f30-64304f02b17c",
+        "Name": "Land Development",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/businesses/land-development"
+      },
+      {
+        "Guid": "1759ebb5-a69f-4c1d-a68b-36bc5bfd2910",
+        "Name": "Permits and Records",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/businesses/permits-and-records"
+      },
+      {
+        "Guid": "cfd306e2-8546-4d50-baf5-8096f220be4b",
+        "Name": "Zoning",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/businesses/zoning"
+      }
+    ],
+    "Guid": "c7e8e62a-0501-4df0-a0e6-ef275bf33665",
+    "Name": "Businesses",
+    "Description": "",
+    "Path": "https://www.hillsboroughcounty.org/en/businesses",
+    "FeaturedLink": {
+      "Excerpt": "24/7 online development permitting solution",
+      "Url": "https://www.hillsboroughcounty.org/en/government/departments/development/hillsgovhub",
+      "ImgSrc": "/library/hillsborough/media-center/images/hillsgovhubmenu.png",
+      "Guid": "2453072d-5401-4ab4-8f91-cf90a3220e6d",
+      "Name": "HillsGovHub",
+      "Description": "24/7 online development permitting solution",
+      "Path": "https://www.hillsboroughcounty.org/en/government/departments/development/hillsgovhub"
+    }
+  },
+  {
+    "Children": [
+      {
+        "Guid": "26eef89c-4922-48e8-b207-4fc243292788",
+        "Name": "Agencies",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/agencies"
+      },
+      {
+        "Guid": "ef7c58e7-f9e1-424e-a706-75747fb77270",
+        "Name": "Board of County Commissioners",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/board-of-county-commissioners"
+      },
+      {
+        "Guid": "74e9e9b3-06fa-4a8a-9b16-9720cbe097a6",
+        "Name": "Boards and Committees",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/boards-and-committees"
+      },
+      {
+        "Guid": "65b48e45-ec0a-41ab-9604-735c7a3339d4",
+        "Name": "Budget",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/budget"
+      },
+      {
+        "Guid": "b791e2bd-e96d-400f-9351-a6832c1218ca",
+        "Name": "Codes and Ordinances",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/codes-and-ordinances"
+      },
+      {
+        "Guid": "e69ddbdc-640e-4bd9-831d-b82a83f1524f",
+        "Name": "County Projects",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/county-projects"
+      },
+      {
+        "Guid": "6d9cf152-1e5b-4a2f-833b-dcd23c166889",
+        "Name": "Departments",
+        "Description": "A list of all County departments with links to department information pages",
+        "Path": "https://www.hillsboroughcounty.org/en/government/departments"
+      },
+      {
+        "Guid": "2cd849d4-3839-469c-84cf-8176bab28278",
+        "Name": "Grants",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/grants"
+      },
+      {
+        "Guid": "e47b54da-74b1-49f3-9b01-8c0f6cf61d33",
+        "Name": "Leadership",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/leadership"
+      },
+      {
+        "Guid": "35745b2a-e000-4829-a75d-006e972f9616",
+        "Name": "Meeting Information",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/meeting-information"
+      },
+      {
+        "Guid": "8a0bd604-aee9-43c7-b78c-3cb1a67ff6f9",
+        "Name": "Real Estate and Facility Services",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/real-estate-and-facility-services"
+      },
+      {
+        "Guid": "41dee0bc-2cd5-44d2-b783-0d6cee95f88d",
+        "Name": "Special Districts",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/government/budget/special-districts"
+      }
+    ],
+    "Guid": "2075bb92-9176-4fbb-8bbe-68fb561e3d36",
+    "Name": "Government",
+    "Description": "",
+    "Path": "https://www.hillsboroughcounty.org/en/government",
+    "FeaturedLink": {
+      "Excerpt": "Register to receive time-sensitive messages about emergencies and certain non-emergency events – straight from us to you.",
+      "Url": "https://www.hillsboroughcounty.org/en/residents/public-safety/emergency-management/hcfl-alert",
+      "ImgSrc": "/library/hillsborough/promotions/hcflalert.png",
+      "Guid": "985debd1-7105-4d41-892c-016b7532cc04",
+      "Name": "HCFL Alert",
+      "Description": "Register to receive time-sensitive messages about emergencies and certain non-emergency events – straight from us to you.",
+      "Path": "https://www.hillsboroughcounty.org/en/residents/public-safety/emergency-management/hcfl-alert"
+    }
+  },
+  {
+    "Children": [
+      {
+        "Guid": "76b8a45e-a99a-4b1f-a887-95a765368253",
+        "Name": "Calendar",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/calendar"
+      },
+      {
+        "Guid": "0bd28c64-c753-4efd-b5b0-dd47f87ad68d",
+        "Name": "Charter",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/about-hillsborough/charter"
+      },
+      {
+        "Guid": "6735c7b0-295c-4169-8fe2-42d60d96944b",
+        "Name": "Community Calendar",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/residents/property-owners-and-renters/homeowners-and-neighborhoods/community-calendar"
+      },
+      {
+        "Guid": "4844d3a4-ccdd-4833-ab31-9842240e6a27",
+        "Name": "Contact Us",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/about-hillsborough/contact-us"
+      },
+      {
+        "Guid": "c5c0e2c3-2b67-42f8-b6d7-bc780d6fb93f",
+        "Name": "Hillsborough Television",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/about-hillsborough/hillsborough-television"
+      },
+      {
+        "Guid": "e989cfdd-fa81-49b3-8e83-d4438d289073",
+        "Name": "History",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/about-hillsborough/history"
+      },
+      {
+        "Guid": "b527d0b1-fd74-4e03-ad83-feb1226b614e",
+        "Name": "Jobs",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/about-hillsborough/jobs"
+      },
+      {
+        "Guid": "056ba7db-f1d2-49b8-8003-01699ba8143f",
+        "Name": "Locations",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/locations"
+      },
+      {
+        "Guid": "d8772e0a-e276-4206-ad39-4b4e5b5712db",
+        "Name": "Open Data",
+        "Description": "",
+        "Path": "https://www.hillsboroughcounty.org/en/about-hillsborough/open-data"
+      }
+    ],
+    "Guid": "851d1661-67f5-4079-85e4-baea02ad7936",
+    "Name": "About Hillsborough",
+    "Description": "",
+    "Path": "https://www.hillsboroughcounty.org/en/about-hillsborough",
+    "FeaturedLink": {
+      "Excerpt": "Information on COVID-19 vaccines, testing, as well as resources and case tracking.",
+      "Url": "",
+      "ImgSrc": "/library/hillsborough/media-center/images/covid19/covid-19-dashboard.png",
+      "Guid": "70d9b5c3-65a4-44f3-a640-4eedb19449ae",
+      "Name": "Dashboard",
+      "Description": "Information on COVID-19 vaccines, testing, as well as resources and case tracking.",
+      "Path": ""
+    }
+  },
+  {
+    "Children": [
+      {
+        "Guid": "61c3af76-b8c3-4018-8500-4eef63c37314",
+        "Name": "Apply",
+        "Description": "Permits, Licenses...",
+        "Path": "https://www.hillsboroughcounty.org/en/i-want-to/apply"
+      },
+      {
+        "Guid": "4057c0ee-1a04-486a-856e-ea2a676f0055",
+        "Name": "Register",
+        "Description": "Animals, Permits, Water...",
+        "Path": "https://www.hillsboroughcounty.org/en/i-want-to/register"
+      },
+      {
+        "Guid": "106b0492-68c5-4958-a24b-e7efd0d0d30f",
+        "Name": "Report",
+        "Description": "Violations, Repairs, Animals...",
+        "Path": "https://www.hillsboroughcounty.org/en/i-want-to/report"
+      },
+      {
+        "Guid": "203e93e7-552b-4cf9-bdc5-5e75a111684c",
+        "Name": "Request",
+        "Description": "Records, Services, Inspections...",
+        "Path": "https://www.hillsboroughcounty.org/en/i-want-to/request"
+      },
+      {
+        "Guid": "fec93185-44a2-44b5-8a94-5dcb441178e0",
+        "Name": "Pay",
+        "Description": "Bills, Fees, Taxes...",
+        "Path": "https://www.hillsboroughcounty.org/en/i-want-to/pay"
+      }
+    ],
+    "Guid": "acce922f-9f4a-4ee1-abe5-7370ce8785f3",
+    "Name": "I Want To",
+    "Description": "",
+    "Path": "https://www.hillsboroughcounty.org/en/i-want-to",
+    "FeaturedLink": null
+  }
+]
